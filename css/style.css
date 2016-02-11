@@ -1,3 +1,4 @@
+/*Global*/
 html, body {
   overflow-x:hidden;
 }
@@ -10,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 24px;
   font-weight: 700;
 }
 p {
@@ -20,66 +21,6 @@ p {
   font-weight 300;
 }
 
-/*GRID*/
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  position:relative;
-}
-.container:before,
-.container:after {
-  content: " ";
-  display: table;
-}
-.container:after {
-  clear:both;
-}
-.one-half, .one-third, .one-fourth {
-  width: 96%;
-  float: left;
-  position: relative;
-  min-height: 1px;
-  margin: 0 2% 20px;
-}
-.container {
-  width: 900px;
-}
-@media (min-width: 368px) {
-  .container {
-    width: 332px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-  .one-half {
-    width: 46%;
-  }
-  .one-third {
-    width: 29.33333%;
-  }
-  .one-fourth {
-    width: 21%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-@media (min-width:1920px) {
-  .container {
-    width: 70%;
-  }
-}
 
 /*HEADER*/
 header {
@@ -114,7 +55,6 @@ header nav ul li a {
 header .hero {
   background:url('../images/header.jpg') top center no-repeat;
   width: auto;
-  height: 850px;
   background-size: cover;
   text-align: center;
   display: block;
@@ -122,9 +62,9 @@ header .hero {
   padding-bottom: 40px;
 }
 header .hero h1 {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 400;
-  margin-top: 300px;
+  margin-top: 118px;
   color: white;
   line-height:80px;
 }
@@ -139,7 +79,7 @@ header .hero p {
   font-size: 22px;
   line-height: 26px;
   font-weight: 100;
-  margin-top: 250px;
+  margin-top: 90px;
 }
 header .hero a {
   text-decoration: none;
@@ -337,4 +277,79 @@ footer nav ul li a {
 footer .social a {
   font-size: 30px;
   color: #FFFFFF;
+}
+
+/*GRID*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  position:relative;
+  width: 96%;
+}
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear:both;
+}
+.one-half, .one-third, .one-fourth {
+  width: 96%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin: 0 2% 20px;
+}
+@media (min-width: 368px) {
+  .container {
+    width: 332px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  header .hero h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+  header .hero {
+    height: 850px;
+  }
+  header .hero h1 {
+    font-size: 60px;
+    margin-top: 300px;
+  }
+  header .hero p {
+    margin-top: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width:1920px) {
+  .container {
+    width: 1300px;
+  }
 }

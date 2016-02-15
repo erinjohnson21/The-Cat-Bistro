@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 700;
 }
 p {
@@ -27,6 +27,7 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   position:relative;
+  width: 94%;
 }
 .container:before,
 .container:after {
@@ -43,43 +44,7 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
-.container {
-  width: 900px;
-}
-@media (min-width: 368px) {
-  .container {
-    width: 332px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-  .one-half {
-    width: 46%;
-  }
-  .one-third {
-    width: 29.33333%;
-  }
-  .one-fourth {
-    width: 21%;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-@media (min-width:1920px) {
-  .container {
-    width: 70%;
-  }
-}
+
 
 /*HEADER*/
 header {
@@ -93,11 +58,13 @@ header {
   width: 1443px;
   }
 }
+header nav {
+  text-align: center;
+}
 header nav ul {
   display: inline;
   text-align: left;
   float: right;
-  margin: 5px;
 }
 header nav ul > li {
   list-style-type: none;
@@ -114,7 +81,6 @@ header nav ul li a {
 header .hero {
   background:url('../images/header.jpg') top center no-repeat;
   width: auto;
-  height: 850px;
   background-size: cover;
   text-align: center;
   display: block;
@@ -122,24 +88,25 @@ header .hero {
   padding-bottom: 40px;
 }
 header .hero h1 {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 400;
-  margin-top: 300px;
+  margin-top: 118px;
   color: white;
-  line-height:80px;
+  line-height: 40px;
 }
 header .hero span {
   font-family: "Rock Salt", cursive;
-  font-size: 70px;
+  font-size: 30px;
   font-weight: normal;
+  line-height: 40px;
 }
 header .hero p {
   color: white;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 19px;
   line-height: 26px;
   font-weight: 100;
-  margin-top: 250px;
+  margin-top: 110px;
 }
 header .hero a {
   text-decoration: none;
@@ -161,11 +128,13 @@ header .hero a:hover {
   max-width: 100%;
   clear: both;
 }
-
-#about p {
-  line-height: 40px;
+#about a {
+  text-decoration: none;
+  color: #333333;
 }
-
+#about a:hover {
+  color: #5b5b5b
+}
 
 /*ADOPTION*/
 #adopt {
@@ -191,9 +160,9 @@ header .hero a:hover {
   font-size: 20px;
 }
 #adopt .box {
+  width: 60%;
   float: none;
   background-color: #f58235;
-  width: 800px;
   padding: 2  0 2  0;
   border-radius: 10px;
   margin-left: auto;
@@ -221,17 +190,16 @@ header .hero a:hover {
   margin-top: -80px;
   float: left;
   padding-right: 100px;
+  max-width: 100%;
 }
 #donate .container .small p {
   font-size: 12px;
   line-height: 17px;
   text-transform: uppercase;
   margin-top: 0;
-  margin-left: -25px;
 }
 /*BUTTONS*/
 .btn {
-  margin-left: -25px;
   border-radius: 4px;
   text-align: center;
   color:white;
@@ -266,8 +234,8 @@ header .hero a:hover {
   padding: 0 0 20 0;
 }
 #faq .box {
+  width: 60%;
   background-color: #f58235;
-  width: 900px;
   padding: 2  0 2  0;
   border-radius: 10px;
   margin-left: auto;
@@ -298,10 +266,6 @@ header .hero a:hover {
   border-radius: 50%;
   float: left;
 }
-#contact .logo {
-  margin-top: 80px;
-  margin-left: -25px;
-}
 #contact h2 {
   margin: 0;
 }
@@ -318,11 +282,13 @@ header .hero a:hover {
 footer {
   background-color: #f58235;
   color: #FFFFFF;
+  height: auto;
 }
 footer p, footer nav ul {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 100;
-  margin-top: 20px;
+  text-align: center;
+
 }
 footer nav ul li {
   list-style-type: none;
@@ -334,7 +300,184 @@ footer nav ul li a {
   color: white;
   padding: 5px;
 }
+footer .copyright-block {
+  text-align: center;
+}
+footer .social {
+  text-align: center;
+  margin-left: -20;
+}
 footer .social a {
   font-size: 30px;
   color: #FFFFFF;
+  padding-left: 30px;
+}
+footer .links {
+  text-align: left;
+  margin-left: -20;
+}
+
+/*MEDIA STYLES*/
+@media (min-width: 320px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 96%;
+  }
+  header nav .one-half {
+    width: auto;
+  }
+  header nav {
+    text-align: left;
+  }
+  header .hero h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  header .hero span {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  header .hero p {
+    margin-top: 200px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  p {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 300;
+  }
+  #about img {
+    float: none;
+  }
+  #donate .container .small p {
+  font-size: 16px;
+  line-height: 20px;
+  }
+  #faq h3 {
+    font-size: 25px;
+  }
+  #contact {
+    text-align: center;
+  }
+  #contact .map {
+    float: none;
+  }
+  footer p, footer nav ul {
+    font-size: 25px;
+  }
+  footer .social a {
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.33333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+  header nav .one-half {
+    width: 46%;
+  }
+  header nav ul {
+    float:right;
+    text-align: left;
+  }
+  header nav ul li a {
+    font-size: 19px;
+  }
+  header .hero {
+    height: 850px;
+  }
+  header  .hero h1 {
+    font-size: 70px;
+    margin-top: 250px;
+    line-height: 90px;
+  }
+  header .hero span {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  header .hero p {
+    margin-top: 250px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  p {
+  font-size: 25px;
+  line-height:40px;
+  }
+  .btn {
+    margin-left: -25px;
+  }
+  #about img {
+    float: left;
+    margin-top: 120px;
+  }
+  #about p {
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 300;
+  }
+  #donate .small p {
+  font-size: 16px;
+  line-height: 20px;
+  clear: both;
+  }
+  #faq h3 {
+    font-size: 25px;
+  }
+  #contact {
+    text-align: left;
+  }
+  #contact .map {
+    float: none;
+  }
+  #contact .logo {
+    margin-top: 100px;
+  }
+  footer p, footer nav ul {
+    font-size: 18px;
+  }
+  footer .social {
+    padding-top: 25px;
+    width: 300px;
+    text-align: center;
+  }
+  footer .social a {
+    font-size: 30px;
+  }
+  footer .links {
+    width: auto;
+    text-align: left;
+    float: right;
+    padding-top: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width:1920px) {
+  .container {
+    width: 1400px;
+  }
 }

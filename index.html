@@ -9,6 +9,26 @@
   <!--GoogleFonts-->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700|Rock+Salt|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 
+  <!-- SMOOTH SCROLL -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+  <!-- End of SMOOTH SCROLL -->
+
   <!--CSS-->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -22,20 +42,20 @@
     <div class="one-half">
       <a href="index.html" class="site-logo"><img src="images/navlogo.png" alt="Milk and Saucer"/></a>
     </div>
-    <div class="one-half">
+    <div class="one-half links">
       <ul>
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#adopt">Adopt</a></li>
-        <li><a href="#donate">Donate</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="smoothScroll" href="#header">Home</a></li>
+        <li><a class="smoothScroll" href="#about">About</a></li>
+        <li><a class="smoothScroll" href="#adopt">Adopt</a></li>
+        <li><a class="smoothScroll" href="#donate">Donate</a></li>
+        <li><a class="smoothScroll" href="#faq">FAQ</a></li>
+        <li><a class="smoothScroll" href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
   <div class="container hero">
     <h1>Helping cats find their <br> <span>furever home...</span> <br> One cup at a time.</h1>
-    <p>123 Main Street Enterprise, Alabama | <a href="tel:+1+334-367-1234">334-367-1234</a> <br> Monday - Friday | 11 a.m. - 3 p.m.  Saturday & Sunday | 10 a.m. - 4 p.m.</p>
+    <p>123 Main Street Enterprise, AL | <a href="tel:+1+334-367-1234">334-367-1234</a> <br> Monday - Friday | 11 a.m. - 3 p.m.  Saturday & Sunday | 10 a.m. - 4 p.m.</p>
   </div>
 </header>
 
@@ -49,7 +69,7 @@
       <div class="one-half">
         <h2>Who We Are</h2>
         <p>The Milk Saucer Cat Cafe is a coffee shop and cat adoption center through a partnership with two local resues, the SOS Animal Shelter and Wiregrass Pet Rescue. <br> We offer a selection of coffee, teas, assorted beverages and snacks. You will enter through the cafe and will register at the counter to enter into our Cat Room. There is a small  donation fee in order to  spend time with the cats, but if you purchase anything from our cafe, this will act  as your fee. If you decide to adopt, this fee will also go towards the adoption. Reservations are not required, but are encouraged.
-          See our FAQ for more information.</p>
+          See our <a href="#faq">FAQ</a> for more information.</p>
       </div>
     </div>
   </section>
@@ -58,7 +78,7 @@
   <section class id="adopt">
     <div class="container">
       <h2>Adoption</h2>
-      <p>Our cats in residence are hosted from two local shelters. If you visit us and find your new companion, let us know! <br>Adoptions are handled after hours and an application must be filled out beforehand.
+      <p>Our cats in residence are hosted from two local shelters. If you visit us and find your new companion, let us know! Adoptions are handled after hours and an application must be filled out beforehand.
     </div>
       <ul class=container>
           <li class="one-fourth">
@@ -150,9 +170,9 @@
   <footer>
     <div class="container">
         <div class="one-third">
-          <p class="copyright-block">&copy; 2016. <strong>Milk and Saucer Cat Cafe</strong> - All Rights Reserved.</p>
+          <p class="copyright-block">&copy; 2016. <strong>Milk and Saucer Cat Cafe</strong></p>
         </div>
-        <nav class="one-third">
+        <nav class="one-third links">
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -167,9 +187,7 @@
           <a href="#"><i class="fa fa-instagram"></i></a></li>
           <a href="#"><i class="fa fa-twitter-square"></i></a></li>
         </div>
-      </div>
     </div>
   </footer>
-
 </body>
 </html>

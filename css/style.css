@@ -143,18 +143,16 @@ header .hero a:hover {
   padding-bottom: 70px;
   background: #8f6d56;
   color: white;
-  list-style-type:none;
 }
 #adopt p {
   font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 300;
 }
-#adopt ul .one-fourth {
+#adopt li.one-fourth {
   list-style-type: none;
 }
 #adopt ul li img {
   border-radius: 50%;
-  list-style-type: none;
 }
 #adopt ul > li > p {
   font-family: "Rock Salt", cursive;

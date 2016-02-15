@@ -148,7 +148,7 @@ header .hero a:hover {
   font-family: "Roboto", Helvetica, sans-serif;
   font-weight: 300;
 }
-#adopt li.one-fourth {
+#adopt ul > li {
   list-style-type: none;
 }
 #adopt ul li img {

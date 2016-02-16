@@ -19,9 +19,6 @@ p {
   line-height:32px;
   font-weight 300;
 }
-ul {
-  list-style-type: none;
-}
 
 /*GRID*/
 .container {
@@ -153,6 +150,9 @@ header .hero a:hover {
 }
 #adopt ul {
   list-style-type: none;
+}
+#adopt ul > li {
+  list-style-type:none;
 }
 #adopt ul li img {
   border-radius: 50%;

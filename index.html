@@ -9,25 +9,7 @@
   <!--GoogleFonts-->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700|Rock+Salt|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 
-  <!-- SMOOTH SCROLL -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>
-  $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-  </script>
-  <!-- End of SMOOTH SCROLL -->
+
 
   <!--CSS-->
   <link rel="stylesheet" href="css/normalize.css">
@@ -190,4 +172,23 @@
     </div>
   </footer>
 </body>
+<!-- SMOOTH SCROLL -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
 </html>

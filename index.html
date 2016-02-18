@@ -21,18 +21,7 @@
 <body>
   <!-- SMOOTH SCROLL -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>
-    // Document ready shorthand statement
-    $(function() {
-      $('.smoothScroll').click(function() {
-        var id = $(this).attr('href');
-        $('html,body').animate({ scrollTop: $(id).offset().top }, 'slow');
-        // Prevent default behavior of link
-        return false;
-      });
-    });
-</script>
-  <!-- End of SMOOTH SCROLL -->
+
 
 <header>
   <nav class="container">
@@ -41,8 +30,8 @@
     </div>
     <div class="one-half links">
       <ul>
-        <li><a href="#header" class="smoothScroll">Home</a></li>
-        <li><a  href="#about" class="smoothScroll">About</a></li>
+        <li><a class="smoothScroll" href="#header">Home</a></li>
+        <li><a class="smoothScroll" href="#about" >About</a></li>
         <li><a class="smoothScroll" href="#adopt">Adopt</a></li>
         <li><a class="smoothScroll" href="#donate">Donate</a></li>
         <li><a class="smoothScroll" href="#faq">FAQ</a></li>
@@ -103,18 +92,18 @@
   <!--DONATE-->
   <section class id="donate">
     <img src="images/donate.png">
-      <div class="container donate">
-          <h2>Donations</h2>
-            <p> Milk & Saucer is a local non-profit organization supported almost entirely by your contributions. We use proceeds from the cafe to take care of our cats in residence, but they are not always enough.
-                We have vet bills, food bills and anything else the cats may need. We also like to help the shelters that allow us to have the cats in our cafe.</p>
-                  <div class="one-fourth">
-                      <a href="paypal.com" class="btn"><i class="fa fa-paw"></i><span> Donate </span><i class="fa fa-paw"></i></a>
-                  </div>
-                    <div class="one-fourth small">
-                        <p>To donate by mail, please send a check, made payable to Milk & Saucer, to: 123 Main Street, Enterprise, AL 36330</p>
-                    </div>
-                  </div>
-                </section>
+    <div class="container donate">
+      <h2>Donations</h2>
+      <p> Milk & Saucer is a local non-profit organization supported almost entirely by your contributions. We use proceeds from the cafe to take care of our cats in residence, but they are not always enough.
+          We have vet bills, food bills and anything else the cats may need. We also like to help the shelters that allow us to have the cats in our cafe.</p>
+      <div class="one-fourth">
+          <a href="paypal.com" class="btn"><i class="fa fa-paw"></i><span> Donate </span><i class="fa fa-paw"></i></a>
+      </div>
+      <div class="one-fourth small">
+          <p>To donate by mail, please send a check, made payable to Milk & Saucer, to: 123 Main Street, Enterprise, AL 36330</p>
+      </div>
+    </div>
+  </section>
 
 <!--FAQ-->
 <section class id="faq">
@@ -186,5 +175,17 @@
         </div>
     </div>
   </footer>
+  <script>
+      // Document ready shorthand statement
+      $(function() {
+        $('.smoothScroll').click(function() {
+          var id = $(this).attr('href');
+          $('html,body').animate({ scrollTop: $(id).offset().top }, 'slow');
+          // Prevent default behavior of link
+          return false;
+        });
+      });
+  </script>
+    <!-- End of SMOOTH SCROLL -->
 </body>
 </html>

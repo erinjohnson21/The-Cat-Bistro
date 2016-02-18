@@ -1,4 +1,4 @@
-html, body {
+body {
   overflow-x:hidden;
 }
 body {
@@ -165,7 +165,7 @@ header .hero a:hover {
   width: 60%;
   float: none;
   background-color: #f58235;
-  padding: 2  0 2  0;
+  padding: 2px 0 2px  0;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
